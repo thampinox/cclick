@@ -11,8 +11,9 @@ const config = {
 
 	kit: {
 		paths: {
-			base: '/cclick/'
+			base: '/cclick'
 		},
+		appDir: 'internal',
 		adapter: adapter({
 			fallback: '200.html'
 		}),
