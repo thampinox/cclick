@@ -5,10 +5,17 @@ import preprocess from 'svelte-preprocess';
 const config = {
 	// Consult https://github.com/sveltejs/svelte-preprocess
 	// for more information about preprocessors
-	preprocess: preprocess(),
+	preprocess: preprocess({
+		postcss: true
+	}),
 
 	kit: {
-		adapter: adapter()
+		adapter: adapter(),
+		alias: {
+			// an alias ending /* will only match
+			// the contents of a directory, not the directory itself
+			'src/*': 'src/*'
+		}
 	}
 };
 
