@@ -10,6 +10,9 @@ const config = {
 	}),
 
 	kit: {
+		paths: {
+			base: '/cclick'
+		},
 		adapter: adapter({
 			fallback: '200.html'
 		}),
