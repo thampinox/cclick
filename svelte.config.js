@@ -10,7 +10,10 @@ const config = {
 	}),
 
 	kit: {
-		adapter: adapter(),
+		adapter: adapter({
+			fallback: '200.html'
+		}),
+		prerender: { entries: [] },
 		alias: {
 			// an alias ending /* will only match
 			// the contents of a directory, not the directory itself
