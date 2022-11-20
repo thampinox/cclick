@@ -15,7 +15,7 @@ const config = {
 		},
 		appDir: 'internal',
 		adapter: adapter({
-			fallback: '200.html'
+			fallback: 'index.html'
 		}),
 		prerender: { entries: [] },
 		alias: {
